@@ -17,9 +17,9 @@
  
 <body>
 <h1>Get some of that fresh goodness.</h1>
-<img src="choc.png"  style="width: 500px;px;height:210px;">
-<img src="glass bottle.png"  style="width: 500px;px;height:210px;">
-<img src="normal.png"  style="width: 500px;px;height:210px;">
+<img src="choc.png"  style="width: 500px;height:210px;">
+<img src="glass bottle.png"  style="width:500px;height:210px;">
+<img src="normal.png"  style="width: 500px;height:210px;">
 <p>Joining the gym at Hutt Valley High School is a 
   great way for students to stay active, build strength,
    and improve overall wellbeing. Membership gives 
@@ -29,6 +29,35 @@
     working out—it’s about creating healthy habits, 
     boosting confidence, and being part of
    a positive and supportive school environment.</p>
+   <h2>Order Form</h2>
+
+<label for="milkType">Choose Milk:</label>
+<select id="milkType">
+    <option value="glass">Glass Bottle Milk ($7.99)</option>
+    <option value="standard">Standard Milk ($5.99)</option>
+    <option value="chocolate">Chocolate Milk ($6.99)</option>
+</select>
+
+<br><br>
+
+<label for="quantity">Quantity:</label>
+<input type="number" id="quantity" min="1" value="1">
+
+<button onclick="addItem()">Add to Order</button>
+
+<h3>Current Order</h3>
+<p id="orderList">No items added yet.</p>
+
+<label for="money">Money Available ($):</label>
+<input type="number" id="money" step="0.01">
+
+<br><br>
+
+<button onclick="checkout()">Checkout</button>
+
+<h3 id="output"></h3>
+
+<script src="buy.js"></script>
 <footer>
     <p>CalciRaw - Fresh Milk</p>
   </footer>
