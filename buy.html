@@ -1,35 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>CalciRaw - Fresh Milk</title>
- <link rel="stylesheet" href="style.css">
+    <title>CalciRaw - Fresh Milk</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<header>
-  <!--  I got the code from my website project  -->
-      <img src="CalciRaw1.png" style="width:300px;height:210px;">
-    <h1>Buy Milk</h1>
-  </header>
-  <nav>
-<a href="index.html">Home</a>
-<a href="buy.html">Buy</a>
-<a href="Contact.html">Contact</a>
-</nav>
- 
+
 <body>
+
+<header>
+    <img src="CalciRaw1.png" style="width:300px;height:210px;">
+    <h1>Buy Milk</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="buy.html">Buy</a>
+    <a href="Contact.html">Contact</a>
+</nav>
+
 <h1>Get some of that fresh goodness.</h1>
-<img src="choc.png"  style="width: 500px;height:210px;">
-<img src="glass bottle.png"  style="width:500px;height:210px;">
-<img src="normal.png"  style="width: 500px;height:210px;">
-<p>Joining the gym at Hutt Valley High School is a 
-  great way for students to stay active, build strength,
-   and improve overall wellbeing. Membership gives 
-   access to a safe, well-equipped space where students 
-   can train at their own pace, whether they’re new to 
-   fitness or already experienced. It’s not just about
-    working out—it’s about creating healthy habits, 
-    boosting confidence, and being part of
-   a positive and supportive school environment.</p>
-   <h2>Order Form</h2>
+
+<img src="choc.png" style="width:500px;height:210px;">
+<img src="glass bottle.png" style="width:500px;height:210px;">
+<img src="normal.png" style="width:500px;height:210px;">
+
+<h2>Order Form</h2>
 
 <label for="milkType">Choose Milk:</label>
 <select id="milkType">
@@ -46,7 +41,11 @@
 <button onclick="addItem()">Add to Order</button>
 
 <h3>Current Order</h3>
-<p id="orderList">No items added yet.</p>
+<p id="orderList">
+    Glass Bottle Milk: 0<br>
+    Standard Milk: 0<br>
+    Chocolate Milk: 0
+</p>
 
 <label for="money">Money Available ($):</label>
 <input type="number" id="money" step="0.01">
@@ -57,9 +56,11 @@
 
 <h3 id="output"></h3>
 
-<script src="buy.js"></script>
 <footer>
     <p>CalciRaw - Fresh Milk</p>
-  </footer>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>

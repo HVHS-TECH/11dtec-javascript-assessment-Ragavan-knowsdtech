@@ -1,4 +1,5 @@
-console.log("Hello world!")
+console.log("Script Loaded");
+
 let glassCount = 0;
 let standardCount = 0;
 let chocolateCount = 0;
@@ -8,6 +9,7 @@ const STANDARD_PRICE = 5.99;
 const CHOCOLATE_PRICE = 6.99;
 
 function addItem() {
+
     let milkType = document.getElementById("milkType").value;
     let quantity = Number(document.getElementById("quantity").value);
 
@@ -17,7 +19,7 @@ function addItem() {
     else if (milkType === "standard") {
         standardCount += quantity;
     }
-    else if (milkType === "chocolate") {
+    else {
         chocolateCount += quantity;
     }
 
@@ -28,6 +30,7 @@ function addItem() {
 }
 
 function checkout() {
+
     let money = Number(document.getElementById("money").value);
 
     let total =
@@ -36,6 +39,7 @@ function checkout() {
         (chocolateCount * CHOCOLATE_PRICE);
 
     if (money >= total) {
+
         let change = money - total;
 
         document.getElementById("output").innerHTML =
@@ -43,14 +47,18 @@ function checkout() {
             "Glass Bottle Milk: " + glassCount + "<br>" +
             "Standard Milk: " + standardCount + "<br>" +
             "Chocolate Milk: " + chocolateCount + "<br><br>" +
-            "Total Paid: $" + total.toFixed(2) + "<br>" +
+            "Total Cost: $" + total.toFixed(2) + "<br>" +
+            "Money Given: $" + money.toFixed(2) + "<br>" +
             "Change: $" + change.toFixed(2);
+
     }
     else {
+
         let needed = total - money;
 
         document.getElementById("output").innerHTML =
-            "Not enough money! You need $" +
-            needed.toFixed(2) + " more.";
+            "Not enough money!<br>" +
+            "You need $" + needed.toFixed(2) + " more.";
+
     }
 }
