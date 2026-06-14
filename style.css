@@ -1,7 +1,7 @@
 body {
     background-color: rgb(255, 255, 255);
   }
-  
+/***  I got the code from my website project ***/
    nav {
         background-color: rgb(0, 0, 0);
         padding: 15px;
@@ -54,7 +54,7 @@ body {
     object-fit: cover;        
     aspect-ratio: 1 / 1;   
     width: 100%;
-    max-width: 500px; 
+    max-width: 600px; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
