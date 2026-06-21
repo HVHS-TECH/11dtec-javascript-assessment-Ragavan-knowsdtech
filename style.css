@@ -27,7 +27,10 @@ body {
   h1{padding: 5px;
         padding-left: 1px;
         text-align: center;}
-  
+  p{ 
+    padding: 5px;
+        padding-left: 1px;
+        text-align: center; }
         nav a {
         color: white;
         text-decoration: none;
