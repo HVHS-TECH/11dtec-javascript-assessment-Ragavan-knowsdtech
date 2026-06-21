@@ -8,9 +8,9 @@ const GLASS_PRICE = 3.99;
 const STANDARD_PRICE = 5.99;
 const CHOCOLATE_PRICE = 6.99;
 
-let userName = document.getElementById("nameField").value;
-OUTPUT.innerHTML += "<h3>Hello " + userName + "</h3>";
 
+let customerName = document.getElementById("customerName").value;
+OUTPUT.innerHTML += "<h3>Hello " + customerName + "</h3>";
 
 function addItem() {
 
