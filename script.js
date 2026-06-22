@@ -12,6 +12,7 @@ const CHOCOLATE_PRICE = 6.99;
 let customerName = document.getElementById("customerName").value;
 OUTPUT.innerHTML += "<h3>Hello " + customerName + "</h3>";
 
+
 function addItem() {
 
     let milkType = document.getElementById("milkType").value;
