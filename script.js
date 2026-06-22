@@ -56,6 +56,13 @@ function checkout() {
             "Money Given: $" + money.toFixed(2) + "<br>" +
             "Change: $" + change.toFixed(2);
 
+document.getElementById("output").innerHTML =
+    "Order Successful!<br><br>" +
+    "Customer Name: " + customerName + "<br>" +
+    "Glass Bottle Milk: " + glassCount + "<br>" +
+    "Standard Milk: " + standardCount + "<br>" +
+    "Chocolate Milk: " + chocolateCount + "<br><br>" +
+    "Total Cost: $" + total.toFixed(2);
     }
     else {
 
