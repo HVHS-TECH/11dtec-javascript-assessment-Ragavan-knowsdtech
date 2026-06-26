@@ -69,4 +69,22 @@ function checkout() {
             "You need $" + needed.toFixed(2) + " more.";
 
     }
+    function clearForm() {
+
+    document.getElementById("customerName").value = "";
+    document.getElementById("milkType").selectedIndex = 0;
+    document.getElementById("quantity").value = 1;
+    document.getElementById("money").value = "";
+
+    glassCount = 0;
+    standardCount = 0;
+    chocolateCount = 0;
+
+    document.getElementById("orderList").innerHTML =
+        "Glass Bottle Milk: 0<br>" +
+        "Standard Milk: 0<br>" +
+        "Chocolate Milk: 0";
+
+    document.getElementById("output").innerHTML = "";
+}
 }
