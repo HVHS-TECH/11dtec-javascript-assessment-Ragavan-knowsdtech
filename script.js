@@ -8,10 +8,6 @@ const GLASS_PRICE = 3.99;
 const STANDARD_PRICE = 5.99;
 const CHOCOLATE_PRICE = 6.99;
 
-
-let customerName = document.getElementById("customerName").value;
-OUTPUT.innerHTML += "<h3>Hello " + customerName + "</h3>";
-
 function addItem() {
 
     let milkType = document.getElementById("milkType").value;
@@ -35,8 +31,8 @@ function addItem() {
 
 function checkout() {
 
-    let money = Number(document.getElementById("money").value);
     let customerName = document.getElementById("customerName").value;
+    let money = Number(document.getElementById("money").value);
 
     let total =
         (glassCount * GLASS_PRICE) +
@@ -48,28 +44,28 @@ function checkout() {
         let change = money - total;
 
         document.getElementById("output").innerHTML =
-    "Order Successful!<br><br>" +
-    "Customer Name: " + customerName + "<br><br>" +
-    "Glass Bottle Milk: " + glassCount + "<br>" +
-    "Standard Milk: " + standardCount + "<br>" +
-    "Chocolate Milk: " + chocolateCount + "<br><br>" +
-    "Total Cost: $" + total.toFixed(2) + "<br>" +
-    "Money Given: $" + money.toFixed(2) + "<br>" +
-    "Change: $" + change.toFixed(2);
+            "Order Successful!<br><br>" +
+            "Customer Name: " + customerName + "<br><br>" +
+            "Glass Bottle Milk: " + glassCount + "<br>" +
+            "Standard Milk: " + standardCount + "<br>" +
+            "Chocolate Milk: " + chocolateCount + "<br><br>" +
+            "Total Cost: $" + total.toFixed(2) + "<br>" +
+            "Money Given: $" + money.toFixed(2) + "<br>" +
+            "Change: $" + change.toFixed(2);
 
-   
-   
-        }
-    else {
+    } else {
 
         let needed = total - money;
 
         document.getElementById("output").innerHTML =
             "Not enough money!<br>" +
+            "Customer Name: " + customerName + "<br><br>" +
             "You need $" + needed.toFixed(2) + " more.";
 
     }
-    function clearForm() {
+}
+
+function clearForm() {
 
     document.getElementById("customerName").value = "";
     document.getElementById("milkType").selectedIndex = 0;
@@ -86,5 +82,4 @@ function checkout() {
         "Chocolate Milk: 0";
 
     document.getElementById("output").innerHTML = "";
-}
 }
