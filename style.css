@@ -48,7 +48,7 @@ body {
   }
   
  
-  
+  /**** Kinda Useless for myimges but I will keep it just in case***/
    .smooth-square {
     border-radius: 35px;     
     object-fit: cover;        
@@ -62,7 +62,7 @@ body {
     transform: scale(1.05);
     box-shadow: 10px 25px rgba(0, 0, 0, 0.15);
   }
-
+/**** Using for my Images on Buy.html***/
 .products {
     display: flex;
     justify-content: center;
