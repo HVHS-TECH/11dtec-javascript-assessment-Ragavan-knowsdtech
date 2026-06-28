@@ -63,3 +63,19 @@ body {
     box-shadow: 10px 25px rgba(0, 0, 0, 0.15);
   }
 
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;   /* Moves to next line if screen gets small */
+    margin-top: 50px;
+}
+
+.product {
+    text-align: center;
+    width: 250px;
+}
+.product img {
+    width: 180px;
+    height: auto;
+}
