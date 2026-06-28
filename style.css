@@ -78,5 +78,7 @@ body {
 }
 .product img {
     width: 180px;
-    height: auto;
+    height: auto;        
+    aspect-ratio: 1 / 1;   
+    width: 100%;
 }
