@@ -34,6 +34,17 @@ function checkout() {
     let customerName = document.getElementById("customerName").value;
     let money = Number(document.getElementById("money").value);
 
+    if (customerName.trim() === "") {
+    document.getElementById("output").innerHTML =
+        "Please enter your name.";
+    return;
+}
+
+if (document.getElementById("money").value === "") {
+    document.getElementById("output").innerHTML =
+        "Please enter the amount of money you have.";
+    return;
+}
     let total =
         (glassCount * GLASS_PRICE) +
         (standardCount * STANDARD_PRICE) +
