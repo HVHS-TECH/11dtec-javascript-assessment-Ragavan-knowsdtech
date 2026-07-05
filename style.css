@@ -80,3 +80,15 @@ body {
     width: 500px;
     height: 500px;        
 }
+
+.clear-button {
+    background-color: red;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.clear-button:hover {
+    background-color: darkred;
+}
