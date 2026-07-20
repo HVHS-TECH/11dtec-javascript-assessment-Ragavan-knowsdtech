@@ -12,7 +12,11 @@ function addItem() {
 
     let milkType = document.getElementById("milkType").value;
     let quantity = Number(document.getElementById("quantity").value);
-
+if (quantity <= 0) {
+    document.getElementById("output").innerHTML =
+        "Please enter a quantity greater than 0.";
+    return;
+}
     if (milkType === "glass") {
         glassCount += quantity;
     }
