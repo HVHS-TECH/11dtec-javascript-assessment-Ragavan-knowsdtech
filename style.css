@@ -88,3 +88,11 @@ button.clear-button {
 button.clear-button:hover {
     background-color: darkred !important;
 }
+
+button.submit {
+  background-color: rgb(0, 141, 7) !important;
+    color: white !important;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
